@@ -14,6 +14,13 @@ export default function index() {
   const [st1Getter, st1Setter] = useState<string>("str1");
   const [st2Getter, st2Setter] = useState<number>(1);
 
+  //here i'm using a generic to accpet the two paramers string and number
+  const [stringOrNumberGetter, stringOrNumberSetter] = useState<
+    string | number
+  >(10);
+
+  // stringOrNumberSetter("str");
+
   // console.log(st1Getter());
   // st1Setter("str2");
   // console.log(st1Getter());
