@@ -2,7 +2,8 @@
 // import index from "./typescript-functionwithfunctions";
 // import index from "./function-overloading";
 // import index from "./typescript-options";
-import index from "./typescript-tuples";
+// import index from "./typescript-tuples";
+import index from "./typescript-generics";
 
 // #2 NO BS TS <> Typescript functions
 // tsFunction();
