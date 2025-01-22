@@ -17,4 +17,16 @@ export default function index() {
 
   //   myForEach(myForEachArray, myForchArrayDoublePrint);
   //   myForEach(myForEachArray2, greetPeople);
+
+  const myFilter = <T>(array: T[], callback: (value: T) => boolean): T[] => {
+    let Result: T[] = [];
+    for (let i = 0; i < array.length; i++) {
+      if (callback(array[i])) {
+        Result.push(array[i]);
+      }
+    }
+    return Result;
+  };
+
+  console.log(myFilter([1, 2, 3, 4, 5], (value) => value % 2 === 0));
 }
