@@ -28,5 +28,16 @@ export default function index() {
     return Result;
   };
 
-  console.log(myFilter([1, 2, 3, 4, 5], (value) => value % 2 === 0));
+  //   console.log(myFilter([1, 2, 3, 4, 5], (value) => value % 2 === 0));
+
+  const myMap = <T, K>(array: T[], callback: (value: T) => K): K[] => {
+    let Result: K[] = [];
+    for (let i = 0; i < array.length; i++) {
+      let val = callback(array[i]);
+      Result.push(val);
+    }
+    return Result;
+  };
+
+  console.log(myMap([1, 2, 3, 4, 5], (value) => value.toString().slice(0, 1)));
 }
