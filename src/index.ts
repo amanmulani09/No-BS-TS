@@ -4,7 +4,8 @@
 // import index from "./typescript-options";
 // import index from "./typescript-tuples";
 // import index from "./typescript-generics";
-import index from "./challenge-2";
+// import index from "./challenge-2";
+import index from "./typescript-generics-keyof";
 
 // #2 NO BS TS <> Typescript functions
 // tsFunction();
