@@ -17,6 +17,32 @@ export default function index() {
   // hint:: use | or to add multiple keys
   type IMyUserWithNameAndID = Pick<IMyUser, "id" | "name">;
 
+  //4. Record : it takes two params <ID, data>; this can be used when returning an object
+
+  const mapById = (
+    users: IMyUserWithNameAndID[]
+  ): Record<string, IMyUserWithNameAndID> => {
+    return users.reduce((acc, val: IMyUserWithNameAndID) => {
+      return {
+        ...acc,
+        [val.id]: val,
+      };
+    }, {});
+  };
+
+  console.log(
+    mapById([
+      {
+        id: "foo",
+        name: "mr.foo",
+      },
+      {
+        id: "bar",
+        name: "mrs.bar",
+      },
+    ])
+  );
+
   const merge = (user: IMyUser, overrides: IMyUserRequired): IMyUser => {
     return {
       ...user,
