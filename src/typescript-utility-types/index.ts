@@ -18,7 +18,6 @@ export default function index() {
   type IMyUserWithNameAndID = Pick<IMyUser, "id" | "name">;
 
   //4. Record : it takes two params <ID, data>; this can be used when returning an object
-
   const mapById = (
     users: IMyUserWithNameAndID[]
   ): Record<string, IMyUserWithNameAndID> => {
@@ -42,6 +41,10 @@ export default function index() {
       },
     ])
   );
+
+  //5. Omit:: this works exact opposite of Pick, it created a type from existing type and omit the passed keys
+
+  type IMyUserWithoutID = Omit<IMyUser, "id">;
 
   const merge = (user: IMyUser, overrides: IMyUserRequired): IMyUser => {
     return {
