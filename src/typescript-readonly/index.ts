@@ -26,6 +26,13 @@ export default function index() {
   const c1 = makeCords(10, 20, 30);
   //   c1[1] = 100;
 
-  const reallyConst = [1, 2, 3] as const;
-  reallyConst[0] = 10;
+  //   const reallyConst = [1, 2, 3] as const; // this makes the constant readonly
+  //   reallyConst[0] = 10;
+
+  const user = {
+    name: "aman",
+    city: "PNQ",
+  } as const;
+
+  user.city = "Beed";
 }
