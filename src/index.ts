@@ -6,7 +6,8 @@
 // import index from "./typescript-generics";
 // import index from "./challenge-2";
 // import index from "./typescript-generics-keyof";
-import index from "./typescript-utility-types";
+// import index from "./typescript-utility-types";
+import index from "./typescript-readonly";
 
 // #2 NO BS TS <> Typescript functions
 // tsFunction();
