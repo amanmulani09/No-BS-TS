@@ -13,5 +13,16 @@ export default function index() {
     };
   };
   const usul = makeCat("Usul", "Tabby");
-  usul.breed = "aj";
+  //   usul.breed = "aj";
+
+  const makeCords = (
+    x: number,
+    y: number,
+    z: number
+  ): readonly [number, number, number] => {
+    return [x, y, z];
+  };
+
+  const c1 = makeCords(10, 20, 30);
+  c1[1] = 100;
 }
