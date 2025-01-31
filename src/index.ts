@@ -7,7 +7,8 @@
 // import index from "./challenge-2";
 // import index from "./typescript-generics-keyof";
 // import index from "./typescript-utility-types";
-import index from "./typescript-readonly";
+// import index from "./typescript-readonly";
+import index from "./typescript-enums-literals";
 
 // #2 NO BS TS <> Typescript functions
 // tsFunction();
