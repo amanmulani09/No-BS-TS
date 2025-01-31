@@ -21,5 +21,13 @@ export default function index() {
     return pip
   }
 
-  console.log(rollDice(2))
+//   console.log(rollDice(2))
+
+function sendEvent(event:'addToKart',product:{id:string,product:string}):void;
+function sendEvent(event:'addToCheckout',product:{id:string,price:number}):void;
+function sendEvent(event:string,product:unknown):void{
+    console.log(`${event} ${JSON.stringify(product)}`)
+};
+
+sendEvent("addToKart",{id:'1',product:'beer'})
 }
